@@ -1,0 +1,78 @@
+* {
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+text-align: center;
+}
+
+header {
+  background-color: #f8c291;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+    color: black;
+}
+
+section {
+  padding: 20px;
+}
+
+section ul li {
+    display: block;
+}
+
+.menu-image {
+  width: 100px; /* Rasmning kengligi */
+  height: auto; /* Balansli balandlik */
+  margin-right: 10px; /* Rasm va matn orasidagi bo'shliq */
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #f8c291;
+}
+
+/* Responsiv dizayn */
+@media (max-width: 768px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  section {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 24px;
+  }
+
+  section h2 {
+    font-size: 20px;
+  }
+}

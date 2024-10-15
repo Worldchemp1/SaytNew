@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Restoranimiz</title>
+  </head>
+  <body>
+    <header>
+      <h1>Bizning Restoran</h1>
+      <nav>
+        <ul>
+          <li><a href="#menu">Menyu</a></li>
+          <li><a href="#about">Biz haqimizda</a></li>
+          <li><a href="#contact">Aloqa</a></li>
+          <li><a href="#order">Buyurtma berish</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="menu">
+      <h2>Menyu</h2>
+      <ul>
+        <li>
+          <img src="images/pitsa.png" alt="Pitsa" class="menu-image" />
+          Pitsa - 30,000 so'm
+        </li>
+        <li>
+          <img src="images/burger.png" alt="Burger" class="menu-image" />
+          Burger - 25,000 so'm
+        </li>
+        <li>
+          <img src="images/sushi.png" alt="Sushi" class="menu-image" />
+          Sushi - 45,000 so'm
+        </li>
+      </ul>
+    </section>
+
+    <section id="about">
+      <h2>Biz haqimizda</h2>
+      <p>Bizning restoranimiz sizga eng yaxshi taomlarni taklif qiladi!</p>
+    </section>
+
+    <section id="order">
+      <h2>Buyurtma berish</h2>
+      <form id="order-form">
+        <label for="order-item">Tanlang:</label>
+        <select id="order-item">
+          <option value="Pizza">Pitsa</option>
+          <option value="Burger">Burger</option>
+          <option value="Sushi">Sushi</option>
+        </select>
+        <label for="order-quantity">Miqdor:</label>
+        <input type="number" id="order-quantity" min="1" value="1" />
+        <button type="submit">Buyurtma berish</button>
+      </form>
+    </section>
+
+    <section id="contact">
+      <h2>Aloqa</h2>
+      <form id="contact-form">
+        <label for="name">Ismingiz:</label>
+        <input type="text" id="name" required />
+        <label for="message">Xabar:</label>
+        <textarea id="message" required></textarea>
+        <button type="submit">Yuborish</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Bizning Restoran</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
